@@ -1,0 +1,56 @@
+{
+  "name": "project-stardust",
+  "version": "1.0.0",
+  "description": "Project Stardust ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client:install": "npm i --prefix client",
+    "client": "npm start --prefix client",
+    "server": "node-dev index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Zenith/project-stardust.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Zenith/project-stardust/issues"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "@sendgrid/mail": "^6.5.5",
+    "async": "^3.2.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.1.0",
+    "config": "^3.3.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.6",
+    "node-dev": "^4.0.0",
+    "nodemailer": "^6.4.6",
+    "opencage-api-client": "^0.7.1",
+    "passport-jwt": "^4.0.0",
+    "react-moment": "^0.9.7",
+    "react-recaptcha": "^2.3.10",
+    "react-recaptcha-google": "^1.1.1",
+    "react-scroll": "^1.7.16",
+    "react-scroll-to-component": "^1.0.2",
+    "react-scrollable-anchor": "^0.6.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "passport-jwt": "^4.0.0",
+    "slugify": "^1.4.0"
+  }
+}
